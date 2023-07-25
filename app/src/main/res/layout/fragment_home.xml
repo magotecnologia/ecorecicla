@@ -19,36 +19,40 @@
 
     <ImageView
         android:id="@+id/isotypeImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
         android:layout_gravity="center"
         android:layout_marginBottom="25dp"
         android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerTitleImageView"
-        app:layout_constraintBottom_toTopOf="@+id/welcomeTextView"/>
+        app:layout_constraintBottom_toTopOf="@+id/informationWelcomeLayoutCompat"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/informationWelcomeLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isotypeImageView"
+        app:layout_constraintBottom_toBottomOf="parent">
 
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="@string/welcome"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/isotypeImageView"
-        app:layout_constraintBottom_toTopOf="@+id/forgotPasswordTextView"/>
+        android:hint="@string/welcome" />
 
     <TextView
         android:id="@+id/forgotPasswordTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="@string/system_recycling"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:hint="@string/system_recycling" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

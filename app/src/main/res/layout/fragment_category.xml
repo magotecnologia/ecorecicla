@@ -1,13 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragment.CategoryFragment">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/headerTitleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/titleRegisterCategoryTextView"/>
 
     <TextView
+        android:id="@+id/titleRegisterCategoryTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/register_category"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/categoryRelativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/headerTitleImageView" />
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/categoryRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRegisterCategoryTextView"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButton">
+
+        <Button
+            android:id="@+id/containerButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/container" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/glassButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/glass"
+                android:layout_marginEnd="25dp" />
+
+            <Button
+                android:id="@+id/paperButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/paper"
+                android:layout_marginStart="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/batteryButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/battery"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/woodButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/wood"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryRelativeLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
