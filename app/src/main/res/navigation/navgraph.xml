@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_adviceFragment"
+            app:destination="@id/adviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_recordRecycleFragment"
+            app:destination="@id/recordRecycleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/adviceFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.AdviceFragment"
+        android:label="fragment_advice"
+        tools:layout="@layout/fragment_advice" />
+    <fragment
+        android:id="@+id/recordRecycleFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.RecordRecycleFragment"
+        android:label="fragment_record_recycle"
+        tools:layout="@layout/fragment_record_recycle" />
+</navigation>

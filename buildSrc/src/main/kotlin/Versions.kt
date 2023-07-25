@@ -4,4 +4,6 @@ object Versions {
     const val MATERIAL="1.5.0"
     const val CONSTRAINT="2.1.4"
     const val JUNIT="4.13.2"
+    const val NAVIGATION="2.6.0"
+    const val LIFECYCLE="2.6.1"
 }

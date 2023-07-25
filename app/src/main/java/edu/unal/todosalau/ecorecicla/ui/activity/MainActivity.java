@@ -1,8 +1,10 @@
-package edu.unal.todosalau.ecorecicla;
+package edu.unal.todosalau.ecorecicla.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import edu.unal.todosalau.ecorecicla.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -36,5 +36,9 @@ dependencies {
     implementation(Libraries.APP_COMPAT)
     implementation(Libraries.MATERIAL)
     implementation(Libraries.CONSTRAINT)
+    implementation(Libraries.NAVIGATION)
+    implementation(Libraries.NAVIGATION_FRAGMENT)
+    implementation(Libraries.LIVEDATA)
+    implementation(Libraries.VIEWMODEL)
     testImplementation(Libraries.JUNIT)
 }
