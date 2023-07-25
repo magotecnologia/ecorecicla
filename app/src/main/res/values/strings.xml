@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Ecorecicla</string>
+
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_password">¿Olvido su contraseña?</string>
+    <string name="title_login">Iniciar sesión</string>
+    <string name="title_register">Registrarse</string>
+
+    <string name="title_register_user">Registro de usuario nuevo</string>
+    <string name="name_user">Nombre</string>
+    <string name="email_user">Correo</string>
+    <string name="confirm_user">Confirmar</string>
+
+    <string name="welcome">Bienvenido!!!</string>
+    <string name="system_recycling">Sistema de gestión de reciclaje</string>
+
 </resources>
