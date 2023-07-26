@@ -14,10 +14,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 
 import edu.unal.todosalau.ecorecicla.R;
-import edu.unal.todosalau.ecorecicla.databinding.FragmentLoginBinding;
 
 public class LoginFragment extends Fragment {
-    private FragmentLoginBinding binding;
+//    private FragmentLoginBinding binding;
     private LoginViewModel viewModel;
 
     private NavController navController;
@@ -29,8 +28,9 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentLoginBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+//        binding = FragmentLoginBinding.inflate(inflater, container, false);
+//        return binding.getRoot();
+        return inflater.inflate(R.layout.fragment_login, container, false);
     }
 
     @Override
@@ -50,15 +50,15 @@ public class LoginFragment extends Fragment {
     }
 
     private void setClickEvents() {
-        binding.btnLogin.setOnClickListener(view -> {
-            //viewModel.login(binding.txtUser.getText().toString(), binding.txtUser.getText().toString());
-        });
-        binding.btnRegister.setOnClickListener(view -> {
-            navController.navigate(R.id.action_from_login_to_register);
-        });
-        binding.btnPasswordRecovery.setOnClickListener(view -> {
-            navController.navigate(R.id.action_from_login_to_restore);
-        });
+//        binding.loginButton.setOnClickListener(view -> {
+//            //viewModel.login(binding.txtUser.getText().toString(), binding.txtUser.getText().toString());
+//        });
+//        binding.btnRegister.setOnClickListener(view -> {
+//            navController.navigate(R.id.action_from_login_to_register);
+//        });
+//        binding.btnPasswordRecovery.setOnClickListener(view -> {
+//            navController.navigate(R.id.action_from_login_to_restore);
+//        });
 
     }
 
@@ -66,6 +66,6 @@ public class LoginFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+//        binding = null;
     }
 }
