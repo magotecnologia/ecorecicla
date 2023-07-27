@@ -10,7 +10,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
-            android:src="@drawable/isotipo_EcoRecicla"
+            android:src="@drawable/isotipo_ecorecicla"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
