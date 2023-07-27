@@ -1,4 +1,6 @@
 object Versions {
+    const val KOTLIN="1.8.0"
+
     const val GRADLE="8.0.2"
     const val APP_COMPAT="1.6.1"
     const val MATERIAL="1.5.0"
