@@ -2,8 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/headerLY"
@@ -15,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/headerTitleIV"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -23,7 +22,7 @@
             android:layout_marginBottom="25dp"
             android:src="@drawable/title_header_ecorecicla" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/headerIsotypeIV"
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -46,7 +45,7 @@
             android:id="@+id/nav_host_fragment_activity_main"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="409dp"
+            android:layout_height="wrap_content"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph" />
 

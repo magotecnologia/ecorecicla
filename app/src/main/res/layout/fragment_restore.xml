@@ -6,17 +6,18 @@
 
     <TextView
         android:id="@+id/tvRestore"
-        style="@style/login_title_style"
-        android:text="@string/title_register_user"
-        app:layout_constraintBottom_toTopOf="@+id/etUsername"
+        style="@style/title_style"
+        android:text="@string/title_restore_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/etUsername"
-        style="@style/form_edit_text_style"
-        android:hint="@string/name_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/message_restore_email"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/emailUserEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,29 +29,19 @@
         android:autofillHints="emailAddress"
         android:gravity="center"
         android:hint="@string/email_user"
-        app:layout_constraintBottom_toTopOf="@+id/passwordUserEditText"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 
-    <EditText
-        android:id="@+id/passwordUserEditText"
-        style="@style/form_edit_text_style"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnConfirm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailUserEditText" />
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnConfirm"
         style="@style/login_button_style"
-        android:text="@string/confirm_user"
+        android:text="@string/confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordUserEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/emailUserEditText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

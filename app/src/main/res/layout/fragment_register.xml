@@ -6,9 +6,8 @@
 
     <TextView
         android:id="@+id/tvRegister"
-        style="@style/login_title_style"
+        style="@style/title_style"
         android:text="@string/title_register_user"
-        app:layout_constraintBottom_toTopOf="@+id/etUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +45,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnConfirm"
         style="@style/login_button_style"
-        android:text="@string/confirm_user"
+        android:text="@string/confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

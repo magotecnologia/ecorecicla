@@ -15,17 +15,21 @@
     <string name="title_register_user">Registro de usuario nuevo</string>
     <string name="name_user">Nombre</string>
     <string name="email_user">Correo</string>
-    <string name="confirm_user">Confirmar</string>
+    <string name="confirm">Confirmar</string>
 
     <string name="welcome">BIENVENIDO!</string>
     <string name="system_recycling">YA ERES PARTE DEL SISTEMA DE GESTIÓN DE RECICLAJE</string>
     <string name="category">CATEGORÍAS</string>
 
-    <string name="register_category">Registro categoría de materiales</string>
+    <string name="title_restore_user">Recuperar Contraseña</string>
+    <string name="message_restore_email">Ingrese su correo electronico enviaremos un codigo de recuperacion</string>
+
+    <string name="register_category">Categoría de materiales</string>
     <string name="container">Envase</string>
     <string name="glass">Vidrio</string>
     <string name="paper">Papel</string>
-    <string name="battery">Batería</string>
-    <string name="wood">Madera</string>
+    <string name="weight">Peso</string>
+    <string name="price">Precio</string>
+    <string name="date">Fecha</string>
 
 </resources>

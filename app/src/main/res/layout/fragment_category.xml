@@ -67,14 +67,12 @@
                 android:id="@+id/batteryButton"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/battery"
                 android:layout_marginEnd="5dp"/>
 
             <Button
                 android:id="@+id/woodButton"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/wood"
                 android:layout_marginStart="5dp"/>
 
         </LinearLayout>
@@ -85,7 +83,7 @@
         android:id="@+id/confirmButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="@string/confirm_user"
+        android:text="@string/confirm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
