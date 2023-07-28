@@ -12,7 +12,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="25dp"
         android:src="@drawable/title_header_ecorecicla"
-        android:layout_marginTop="20dp"
+        android:layout_marginVertical="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/login_nav_host_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
         app:navGraph="@navigation/login_nav_graph"
