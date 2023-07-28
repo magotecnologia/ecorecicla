@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void navigateToCategoryFragment() {
-        navController.navigate(R.id.action_homeFragment_to_categoryFragment);
+        navController.navigate(R.id.homeFragment);
     }
 }
