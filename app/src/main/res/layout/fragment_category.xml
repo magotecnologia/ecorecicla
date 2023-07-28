@@ -1,106 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/headerTitleImageView"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="25dp"
-        android:src="@drawable/title_header_ecorecicla"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/titleRegisterCategoryTextView"/>
-
-    <TextView
-        android:id="@+id/titleRegisterCategoryTextView"
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/matetialsCategoryET"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="@string/register_category"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/category_materials"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/categoryRelativeLayout"
-        app:layout_constraintTop_toBottomOf="@+id/headerTitleImageView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/categoryRelativeLayout"
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/glassIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/glass_material"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matetialsCategoryET" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/paper_material"
+        app:layout_constraintEnd_toStartOf="@+id/plasticImageView"
+        app:layout_constraintStart_toEndOf="@+id/glassIV"
+        app:layout_constraintTop_toBottomOf="@+id/matetialsCategoryET" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/plasticImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/plastic_material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matetialsCategoryET" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/greenRecyclingIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/green_recycling"
+        app:layout_constraintBottom_toTopOf="@+id/glassTV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/blue_recycling"
+        app:layout_constraintBottom_toTopOf="@+id/paperTV"
+        app:layout_constraintEnd_toStartOf="@+id/yellowRecyclinIV"
+        app:layout_constraintStart_toEndOf="@+id/greenRecyclingIV" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/yellowRecyclinIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yellow_recycling"
+        app:layout_constraintBottom_toTopOf="@+id/plasticTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plasticImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/glassTV"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleRegisterCategoryTextView"
-        app:layout_constraintBottom_toTopOf="@+id/confirmButton">
-
-        <Button
-            android:id="@+id/containerButton"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/container" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/glassButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/glass"
-                android:layout_marginEnd="25dp" />
-
-            <Button
-                android:id="@+id/paperButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/paper"
-                android:layout_marginStart="25dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/batteryButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/battery"
-                android:layout_marginEnd="5dp"/>
-
-            <Button
-                android:id="@+id/woodButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/wood"
-                android:layout_marginStart="5dp"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/confirmButton"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="@string/confirm_user"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/glass"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryRelativeLayout" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paperTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plasticTV"
+        app:layout_constraintStart_toEndOf="@+id/glassTV" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/plasticTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plastic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,10 @@
     <string name="container">Envase</string>
     <string name="glass">Vidrio</string>
     <string name="paper">Papel</string>
+    <string name="plastic">Pástico</string>
     <string name="battery">Batería</string>
     <string name="wood">Madera</string>
+
+    <string name="category_materials">Categoría de Materiales</string>
 
 </resources>
