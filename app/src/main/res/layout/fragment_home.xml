@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/welcomeTextView"
-        style="@style/login_title_style"
+        style="@style/title_style"
         android:gravity="center"
         android:text="@string/welcome" />
 
