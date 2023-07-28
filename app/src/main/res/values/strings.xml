@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">Ecorecicla</string>
 
-    <string name="title_home">Inicio</string>
-    <string name="title_dashboard">Panel</string>
-    <string name="title_notifications">Notificaciones</string>
+    <string name="title_category">Categorías</string>
+    <string name="title_statistics">Estadística</string>
+    <string name="title_tips">Consejos</string>
 
     <string name="user">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="forgot_password">¿Olvido su contraseña?</string>
+    <string name="register">¿Aun no tienes cuenta? Registrate</string>
     <string name="title_login">Iniciar sesión</string>
     <string name="title_register">Registrarse</string>
 
@@ -16,7 +17,7 @@
     <string name="email_user">Correo</string>
     <string name="confirm_user">Confirmar</string>
 
-    <string name="welcome">Bienvenido!!!</string>
+    <string name="welcome">BIENVENIDO!</string>
     <string name="system_recycling">YA ERES PARTE DEL SISTEMA DE GESTIÓN DE RECICLAJE</string>
     <string name="category">CATEGORÍAS</string>
 
