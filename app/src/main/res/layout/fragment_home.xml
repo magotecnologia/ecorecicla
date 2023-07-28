@@ -9,24 +9,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin_side"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/welcomeTextView"
+            style="@style/title_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_side"
             android:gravity="center"
-            android:hint="@string/welcome" />
+            android:text="@string/welcome" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/forgotPasswordTextView"
+            style="@style/text_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
             android:gravity="center"
-            android:hint="@string/system_recycling" />
+            android:text="@string/system_recycling" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

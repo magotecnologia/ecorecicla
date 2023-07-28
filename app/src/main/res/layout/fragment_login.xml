@@ -6,8 +6,9 @@
 
     <TextView
         android:id="@+id/tvLogin"
-        style="@style/login_title_style"
+        style="@style/title_style"
         android:text="@string/title_login"
+        android:layout_marginTop="@dimen/margin_side"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/etUser"
@@ -47,6 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_side"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin">
 
@@ -54,19 +56,18 @@
             android:id="@+id/tvPasswordRecovery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginTop="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
+            android:layout_marginBottom="@dimen/margin_side"
             android:text="@string/forgot_password" />
 
         <TextView
             android:id="@+id/tvRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginStart="@dimen/margin_side"
+            android:layout_marginEnd="@dimen/margin_side"
             android:text="@string/title_register" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
