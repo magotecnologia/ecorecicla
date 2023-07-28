@@ -1,4 +1,4 @@
-package edu.unal.todosalau.ecorecicla.ui.fragment;
+package edu.unal.todosalau.ecorecicla.ui.viewmodel;
 
 import androidx.lifecycle.ViewModel;
 
