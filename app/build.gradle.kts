@@ -39,10 +39,17 @@ dependencies {
     implementation(Libraries.APP_COMPAT)
     implementation(Libraries.MATERIAL)
     implementation(Libraries.CONSTRAINT)
+
     implementation(Libraries.NAVIGATION)
     implementation(Libraries.NAVIGATION_FRAGMENT)
+    implementation(Libraries.NAVIGATION_UI)
+
     implementation(Libraries.LIVEDATA)
     implementation(Libraries.VIEWMODEL)
+
+    implementation(Libraries.PIECHART)
+
     testImplementation(Libraries.JUNIT)
+
     implementation(Platforms.KOTLIN)
 }

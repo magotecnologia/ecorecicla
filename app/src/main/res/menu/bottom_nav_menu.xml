@@ -2,7 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/adviceFragment"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/categoryFragment"
         android:icon="@drawable/baseline_category_24"
         android:title="@string/title_category" />
 
@@ -12,7 +17,7 @@
         android:title="@string/title_statistics" />
 
     <item
-        android:id="@+id/categoryFragment"
+        android:id="@+id/adviceFragment"
         android:icon="@drawable/baseline_restore_from_trash_24"
         android:title="@string/title_tips" />
 

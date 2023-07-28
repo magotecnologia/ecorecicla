@@ -8,4 +8,6 @@ object Versions {
     const val JUNIT="4.13.2"
     const val NAVIGATION="2.5.3"
     const val LIFECYCLE="2.5.1"
+    const val PIECHART="0.7.0"
+
 }
