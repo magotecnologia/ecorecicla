@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Ecorecicla</string>
 
+    <string name="title_home">Principal</string>
     <string name="title_category">Categorías</string>
     <string name="title_statistics">Estadística</string>
     <string name="title_tips">Consejos</string>
