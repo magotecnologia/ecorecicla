@@ -44,5 +44,7 @@ dependencies {
     implementation(Libraries.LIVEDATA)
     implementation(Libraries.VIEWMODEL)
     testImplementation(Libraries.JUNIT)
+
+    implementation(Libraries.PIECHART)
     implementation(Platforms.KOTLIN)
 }

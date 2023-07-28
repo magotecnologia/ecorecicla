@@ -8,4 +8,5 @@ object Libraries{
     const val NAVIGATION_FRAGMENT="androidx.navigation:navigation-fragment:${Versions.NAVIGATION}"
     const val LIVEDATA="androidx.lifecycle:lifecycle-livedata-ktx:${Versions.LIFECYCLE}"
     const val VIEWMODEL="androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE}"
+    const val PIECHART="ir.mahozad.android:pie-chart:${Versions.PIECHART}"
 }
