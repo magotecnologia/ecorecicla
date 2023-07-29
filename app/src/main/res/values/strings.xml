@@ -19,13 +19,13 @@
     <string name="confirm">Confirmar</string>
 
     <string name="welcome">BIENVENIDO!</string>
-    <string name="system_recycling">YA ERES PARTE DEL SISTEMA DE GESTIÓN DE RECICLAJE</string>
+    <string name="system_recycling">Recuerda que cada vez que reciclas apuestas por un mundo mas verde</string>
     <string name="category">CATEGORÍAS</string>
 
     <string name="title_restore_user">Recuperar Contraseña</string>
     <string name="message_restore_email">Ingrese su correo electronico enviaremos un codigo de recuperacion</string>
 
-    <string name="register_category">Categoría de materiales</string>
+    <string name="register_category">Categoría</string>
     <string name="container">Envase</string>
     <string name="glass">Vidrio</string>
     <string name="paper">Papel</string>

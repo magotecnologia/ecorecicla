@@ -40,12 +40,13 @@ public class StatsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         viewModel = new ViewModelProvider(this).get(StatsViewModel.class);
         PieChart.Slice paperSlice = buildBasicSlice(0.2F, "PAPEL");
-        PieChart.Slice glassSlice = buildBasicSlice(0.4F, "VIDRIO");
-        binding.pieChart.setSlices(new ArrayList<>(Arrays.asList(paperSlice, glassSlice)));
+        PieChart.Slice glassSlice = buildBasicSlice(0.3F, "VIDRIO");
+        PieChart.Slice plasticSlice = buildBasicSlice(0.5F, "PLASTICO");
+        binding.pieChart.setSlices(new ArrayList<>(Arrays.asList(paperSlice, glassSlice, plasticSlice)));
     }
 
     PieChart.Slice buildBasicSlice(Float fraction, String legend) {
-        return new PieChart.Slice(fraction, Color.rgb(120, 181, 0), Color.rgb(149, 224, 0), NumberFormat.getPercentInstance().format(fraction), null, null, null, null, null, null, null, null, null, null, null, legend, null, null, null, null, null, null, null, null, null, 1f, 1f);
+        return new PieChart.Slice(fraction, Color.rgb(120, 181, 0), Color.rgb(149, 224, 0), legend + "\n" + NumberFormat.getPercentInstance().format(fraction), null, null, null, null, null, null, null, null, null, null, null, legend, null, null, null, null, null, null, null, null, null, 1f, 1f);
     }
 
 }

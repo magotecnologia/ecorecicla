@@ -19,6 +19,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialsCategoryACET"
@@ -50,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialsCategoryLY"
@@ -65,6 +67,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/blueRecyclinIV"
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/blue_recycling"
@@ -89,6 +92,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialsBottomLY">
@@ -97,24 +102,24 @@
             android:id="@+id/glassTV"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:layout_marginStart="40dp"
-            android:text="@string/glass" />
+            android:text="@string/glass"
+            android:textAlignment="center" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/paperTV"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="@string/paper" />
+            android:text="@string/paper"
+            android:textAlignment="center" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/plasticTV"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:layout_marginEnd="40dp"
-            android:text="@string/plastic" />
+            android:text="@string/plastic"
+            android:textAlignment="center" />
 
     </LinearLayout>
 

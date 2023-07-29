@@ -1,32 +1,27 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/informationWelcomeLayoutCompat"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcomeTextView"
+        style="@style/title_style"
+        android:layout_marginBottom="@dimen/margin_side"
+        android:gravity="center"
+        android:text="@string/welcome" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtHome"
+        style="@style/text_style"
+        android:layout_marginStart="@dimen/margin_side"
+        android:layout_marginEnd="@dimen/margin_side"
+        android:gravity="center"
+        android:text="@string/system_recycling" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/welcomeTextView"
-            style="@style/title_style"
-            android:layout_marginBottom="@dimen/margin_side"
-            android:gravity="center"
-            android:text="@string/welcome" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/forgotPasswordTextView"
-            style="@style/text_style"
-            android:layout_marginStart="@dimen/margin_side"
-            android:layout_marginEnd="@dimen/margin_side"
-            android:gravity="center"
-            android:text="@string/system_recycling" />
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        android:src="@drawable/recycling_steps" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
