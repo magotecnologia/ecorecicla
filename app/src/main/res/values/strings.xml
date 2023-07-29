@@ -36,6 +36,6 @@
 
     <string name="category_materials">Categoría de Materiales</string>
     <string name="title_advice">Consejos</string>
-    <string name="advice_now">Aquí van algunos consejos útiles...</string>
+    <string name="advice_now">Aquí va el consejo del día...</string>
 
 </resources>

@@ -3,33 +3,26 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/tittleAdviceACTV"
+        style="@style/title_style"
+        android:layout_marginBottom="20dp"
         android:text="@string/title_advice"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center_horizontal"
-        android:paddingBottom="16dp" />
+        android:gravity="center_horizontal" />
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dayAdviceACTV"
+        style="@style/text_style"
+        android:layout_marginBottom="20dp"
+        android:text="@string/advice_now" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/adviceRecommendedtACTV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:paddingBottom="16dp" />
-
-    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/advice_now"
-        android:textSize="18sp"
-        android:textColor="@android:color/darker_gray"
-        android:paddingBottom="16dp" />
-
+        android:layout_height="250dp"
+        android:background="@drawable/baseline_chat_bubble_outline_24"
+        style="@style/text_style" />
 
 </LinearLayout>
