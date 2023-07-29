@@ -47,6 +47,6 @@
         <argument
             android:name="material"
             app:argType="edu.unal.todosalau.ecorecicla.ui.state.EMaterial"
-            android:defaultValue="VIDRIO" />
+            android:defaultValue="GLASS" />
     </fragment>
 </navigation>
