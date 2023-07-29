@@ -10,22 +10,22 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import edu.unal.todosalau.ecorecicla.databinding.FragmentCategoryPaperBinding;
+import edu.unal.todosalau.ecorecicla.databinding.FragmentCategoryOptionBinding;
 import edu.unal.todosalau.ecorecicla.ui.viewmodel.RecordRecycleViewModel;
 
-public class CategoryGlassFragment extends Fragment {
+public class CategoryOptionFragment extends Fragment {
     private FragmentCategoryPaperBinding binding;
 
     private RecordRecycleViewModel mViewModel;
 
-    public static CategoryGlassFragment newInstance() {
-        return new CategoryGlassFragment();
+    public static CategoryOptionFragment newInstance() {
+        return new CategoryOptionFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = FragmentCategoryPaperBinding.inflate(inflater, container, false);
+        binding = FragmentCategoryOptionBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

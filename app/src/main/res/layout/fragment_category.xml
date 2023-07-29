@@ -4,85 +4,118 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/titleRegisterCategoryTextView"
-        style="@style/login_title_style"
-        android:text="@string/register_category"
-        app:layout_constraintStart_toStartOf="parent"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/materialsCategoryACET"
+        style="@style/title_style"
+        android:text="@string/category_materials"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/categoryRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/categoryRelativeLayout"
+        android:id="@+id/materialsCategoryLY"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleRegisterCategoryTextView"
-        app:layout_constraintBottom_toTopOf="@+id/confirmButton">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialsCategoryACET"
+        app:layout_constraintBottom_toTopOf="@+id/materialsBottomLY">
 
-        <Button
-            android:id="@+id/containerButton"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/container" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/glassIV"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/glass_material" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/paper_material"/>
 
-            <Button
-                android:id="@+id/glassButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/glass"
-                android:layout_marginEnd="25dp" />
-
-            <Button
-                android:id="@+id/paperButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/paper"
-                android:layout_marginStart="25dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/batteryButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"/>
-
-            <Button
-                android:id="@+id/woodButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"/>
-
-        </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/plasticImageView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/plastic_material" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/confirmButton"
-        android:layout_width="150dp"
+    <LinearLayout
+        android:id="@+id/materialsBottomLY"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/confirm"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryRelativeLayout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialsCategoryLY"
+        app:layout_constraintBottom_toTopOf="@+id/materialsInformationLY">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/greenRecyclingIV"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/green_recycling"
+        app:layout_constraintBottom_toTopOf="@+id/glassTV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/blue_recycling"
+        app:layout_constraintBottom_toTopOf="@+id/paperTV"
+        app:layout_constraintEnd_toStartOf="@+id/yellowRecyclinIV"
+        app:layout_constraintStart_toEndOf="@+id/greenRecyclingIV" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/yellowRecyclinIV"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/yellow_recycling"
+        app:layout_constraintBottom_toTopOf="@+id/plasticTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plasticImageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/materialsInformationLY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialsBottomLY">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/glassTV"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginStart="40dp"
+            android:text="@string/glass" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/paperTV"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/paper" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/plasticTV"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginEnd="40dp"
+            android:text="@string/plastic" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

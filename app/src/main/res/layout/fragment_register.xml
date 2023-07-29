@@ -8,6 +8,8 @@
         android:id="@+id/tvRegister"
         style="@style/title_style"
         android:text="@string/title_register_user"
+        android:layout_marginTop="@dimen/margin_side"
+        app:layout_constraintBottom_toTopOf="@+id/etUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,6 +48,7 @@
         android:id="@+id/btnConfirm"
         style="@style/login_button_style"
         android:text="@string/confirm"
+        android:layout_marginBottom="@dimen/margin_side"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

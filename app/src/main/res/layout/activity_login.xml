@@ -10,7 +10,7 @@
         android:id="@+id/headerLY"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="@dimen/margin_side"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,6 @@
             android:id="@+id/headerIsotypeIV"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="25dp"
             android:src="@drawable/isotipo_ecorecicla" />
 
     </LinearLayout>

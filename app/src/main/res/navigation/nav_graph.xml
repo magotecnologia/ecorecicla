@@ -41,7 +41,7 @@
         tools:layout="@layout/fragment_advice" />
     <fragment
         android:id="@+id/recordRecycleFragment"
-        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.CategoryGlassFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.CategoryOptionFragment"
         android:label="fragment_record_recycle"
-        tools:layout="@layout/fragment_category_glass" />
+        tools:layout="@layout/fragment_category_option" />
 </navigation>
