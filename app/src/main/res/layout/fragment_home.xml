@@ -32,4 +32,6 @@
             android:gravity="center"
             android:text="@string/system_recycling" />
 
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
