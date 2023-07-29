@@ -8,13 +8,13 @@
         android:id="@+id/headerLY"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="25dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/headerTitleIV"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -22,7 +22,7 @@
             android:layout_marginBottom="25dp"
             android:src="@drawable/title_header_ecorecicla" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/headerIsotypeIV"
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -48,8 +48,8 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:labelVisibilityMode="labeled"
         android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

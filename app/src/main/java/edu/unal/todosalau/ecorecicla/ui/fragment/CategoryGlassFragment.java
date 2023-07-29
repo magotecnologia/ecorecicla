@@ -13,18 +13,18 @@ import androidx.lifecycle.ViewModelProvider;
 import edu.unal.todosalau.ecorecicla.R;
 import edu.unal.todosalau.ecorecicla.ui.viewmodel.RecordRecycleViewModel;
 
-public class RecordRecycleFragment extends Fragment {
+public class CategoryGlassFragment extends Fragment {
 
     private RecordRecycleViewModel mViewModel;
 
-    public static RecordRecycleFragment newInstance() {
-        return new RecordRecycleFragment();
+    public static CategoryGlassFragment newInstance() {
+        return new CategoryGlassFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_record_recycle, container, false);
+        return inflater.inflate(R.layout.fragment_category_glass, container, false);
     }
 
     @Override

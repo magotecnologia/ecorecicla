@@ -6,11 +6,10 @@
 
     <TextView
         android:id="@+id/tvLogin"
-        style="@style/login_title_style"
+        style="@style/title_style"
         android:text="@string/title_login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/etUser"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -57,7 +56,6 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="40dp"
-            android:layout_marginBottom="20dp"
             android:text="@string/forgot_password" />
 
         <TextView
@@ -68,6 +66,7 @@
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="40dp"
             android:text="@string/title_register" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
