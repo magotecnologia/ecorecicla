@@ -19,14 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/title_header_ecorecicla" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/headerIsotypeIV"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="25dp"
             android:src="@drawable/isotipo_ecorecicla" />
 
     </LinearLayout>
