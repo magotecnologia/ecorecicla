@@ -1,22 +1,27 @@
 package edu.unal.todosalau.ecorecicla.ui.fragment;
 
-import androidx.lifecycle.ViewModelProvider;
+import static androidx.navigation.fragment.FragmentKt.findNavController;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+
 import edu.unal.todosalau.ecorecicla.R;
+import edu.unal.todosalau.ecorecicla.databinding.FragmentLoginBinding;
+import edu.unal.todosalau.ecorecicla.ui.viewmodel.LoginViewModel;
 
 public class LoginFragment extends Fragment {
-
+    private FragmentLoginBinding binding;
     private LoginViewModel viewModel;
+
+    private NavController navController;
 
     public static LoginFragment newInstance() {
         return new LoginFragment();
@@ -25,21 +30,39 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_login, container, false);
+        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        viewModel = new ViewModelProvider(this).get(LoginViewModel.class);
-        viewModel.state.observe(getViewLifecycleOwner(), loginState -> {
-            if(loginState.getLogged()){
-                //Manda a la otra actividad
-            }
-            if(!loginState.getError().isEmpty()){
-
+        navController = findNavController(this);
+        viewModel = new ViewModelProvider(requireActivity()).get(LoginViewModel.class);
+        viewModel.getState().observe(getViewLifecycleOwner(), loginState -> {
+            if (!loginState.getError().isEmpty()) {
+                //Muestra el error
             }
         });
+        setClickEvents();
+    }
 
+    private void setClickEvents() {
+        binding.btnLogin.setOnClickListener(view -> {
+            viewModel.login(binding.etUser.getText().toString(), binding.etPassword.getText().toString());
+        });
+        binding.tvRegister.setOnClickListener(view -> {
+            navController.navigate(R.id.action_from_login_to_register);
+        });
+        binding.tvPasswordRecovery.setOnClickListener(view -> {
+            navController.navigate(R.id.action_from_login_to_restore);
+        });
+    }
+
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

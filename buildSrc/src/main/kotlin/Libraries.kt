@@ -6,6 +6,8 @@ object Libraries{
     const val JUNIT="junit:junit:${Versions.JUNIT}"
     const val NAVIGATION="androidx.navigation:navigation-ui:${Versions.NAVIGATION}"
     const val NAVIGATION_FRAGMENT="androidx.navigation:navigation-fragment:${Versions.NAVIGATION}"
+    const val NAVIGATION_UI="androidx.navigation:navigation-ui:${Versions.NAVIGATION}"
     const val LIVEDATA="androidx.lifecycle:lifecycle-livedata-ktx:${Versions.LIFECYCLE}"
     const val VIEWMODEL="androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE}"
+    const val PIECHART="ir.mahozad.android:pie-chart:${Versions.PIECHART}"
 }

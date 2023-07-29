@@ -26,7 +26,7 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
-            android:id="@+id/action_categoryFragment_to_recordRecycleFragment"
+            android:id="@+id/category_to_record"
             app:destination="@id/recordRecycleFragment" />
     </fragment>
     <fragment
@@ -41,7 +41,12 @@
         tools:layout="@layout/fragment_advice" />
     <fragment
         android:id="@+id/recordRecycleFragment"
-        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.RecordRecycleFragment"
+        android:name="edu.unal.todosalau.ecorecicla.ui.fragment.CategoryOptionFragment"
         android:label="fragment_record_recycle"
-        tools:layout="@layout/fragment_record_recycle" />
+        tools:layout="@layout/fragment_category_option">
+        <argument
+            android:name="material"
+            app:argType="edu.unal.todosalau.ecorecicla.ui.state.EMaterial"
+            android:defaultValue="GLASS" />
+    </fragment>
 </navigation>

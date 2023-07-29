@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.AdviceFragment">
+    android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tittleAdviceACTV"
+        style="@style/title_style"
+        android:layout_marginBottom="20dp"
+        android:text="@string/title_advice"
+        android:gravity="center_horizontal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dayAdviceACTV"
+        style="@style/text_style"
+        android:layout_marginBottom="20dp"
+        android:text="@string/advice_now" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/adviceRecommendedtACTV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="250dp"
+        android:background="@drawable/baseline_chat_bubble_outline_24"
+        style="@style/text_style" />
 
-</FrameLayout>
+</LinearLayout>

@@ -1,13 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.HomeFragment">
+    android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcomeTextView"
+        style="@style/title_style"
+        android:layout_marginBottom="@dimen/margin_side"
+        android:gravity="center"
+        android:text="@string/welcome" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtHome"
+        style="@style/text_style"
+        android:layout_marginStart="@dimen/margin_side"
+        android:layout_marginEnd="@dimen/margin_side"
+        android:gravity="center"
+        android:text="@string/system_recycling" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/recycling_steps" />
 
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

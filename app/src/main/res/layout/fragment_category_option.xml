@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleCategoryTV"
+        style="@style/title_style"
+        android:text="@string/register_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/categoryGlassACIV"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/category_plastic"
+        app:layout_constraintBottom_toTopOf="@+id/wightACET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCategoryTV" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/wightACET"
+        style="@style/form_edit_text_style"
+        android:autofillHints="emailAddress"
+        android:gravity="center"
+        android:hint="@string/weight"
+        app:layout_constraintBottom_toTopOf="@+id/priceACET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryGlassACIV" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/priceACET"
+        style="@style/form_edit_text_style"
+        android:hint="@string/price"
+        app:layout_constraintBottom_toTopOf="@+id/optionDateS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wightACET" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/optionDateS"
+        style="@style/form_edit_text_style"
+        android:hint="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/confirmACB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceACET" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmACB"
+        style="@style/login_button_style"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionDateS" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

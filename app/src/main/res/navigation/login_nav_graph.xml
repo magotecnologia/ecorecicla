@@ -9,22 +9,40 @@
         android:id="@+id/registerFragment"
         android:name="edu.unal.todosalau.ecorecicla.ui.fragment.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_registerTwoFragment"
+            app:destination="@id/registerTwoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="edu.unal.todosalau.ecorecicla.ui.fragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_restoreFragment"
+            android:id="@+id/action_from_login_to_restore"
             app:destination="@id/restoreFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
+            android:id="@+id/action_from_login_to_register"
             app:destination="@id/registerFragment" />
     </fragment>
     <fragment
         android:id="@+id/restoreFragment"
         android:name="edu.unal.todosalau.ecorecicla.ui.fragment.RestoreFragment"
         android:label="fragment_restore"
+        tools:layout="@layout/fragment_restore" >
+        <action
+            android:id="@+id/action_restoreFragment_to_restoreTwoFragment"
+            app:destination="@id/restoreTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerTwoFragment"
+        android:name="edu.unal.todosalau.ecorecicla.RegisterTwoFragment"
+        android:label="fragment_register_two"
+        tools:layout="@layout/fragment_register_two" />
+    <fragment
+        android:id="@+id/restoreTwoFragment"
+        android:name="edu.unal.todosalau.ecorecicla.RestoreTwoFragment"
+        android:label="fragment_restore_two"
         tools:layout="@layout/fragment_restore" />
 </navigation>

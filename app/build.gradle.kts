@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("androidx.navigation.safeargs") version Versions.NAVIGATION
 }
 
 android {
@@ -29,6 +30,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -36,9 +40,17 @@ dependencies {
     implementation(Libraries.APP_COMPAT)
     implementation(Libraries.MATERIAL)
     implementation(Libraries.CONSTRAINT)
+
     implementation(Libraries.NAVIGATION)
     implementation(Libraries.NAVIGATION_FRAGMENT)
+    implementation(Libraries.NAVIGATION_UI)
+
     implementation(Libraries.LIVEDATA)
     implementation(Libraries.VIEWMODEL)
+
+    implementation(Libraries.PIECHART)
+
     testImplementation(Libraries.JUNIT)
+
+    implementation(Platforms.KOTLIN)
 }

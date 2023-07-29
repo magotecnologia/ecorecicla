@@ -1,22 +1,27 @@
 package edu.unal.todosalau.ecorecicla.ui.fragment;
 
-import androidx.lifecycle.ViewModelProvider;
+import static androidx.navigation.fragment.FragmentKt.findNavController;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import edu.unal.todosalau.ecorecicla.R;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+
+import edu.unal.todosalau.ecorecicla.databinding.FragmentCategoryBinding;
+import edu.unal.todosalau.ecorecicla.ui.state.EMaterial;
+import edu.unal.todosalau.ecorecicla.ui.viewmodel.CategoryViewModel;
 
 public class CategoryFragment extends Fragment {
 
-    private CategoryViewModel mViewModel;
+    private FragmentCategoryBinding binding;
+    private CategoryViewModel viewModel;
+    private NavController navController;
 
     public static CategoryFragment newInstance() {
         return new CategoryFragment();
@@ -25,14 +30,34 @@ public class CategoryFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_category, container, false);
+        binding = FragmentCategoryBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(CategoryViewModel.class);
-        // TODO: Use the ViewModel
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        navController = findNavController(this);
+        viewModel = new ViewModelProvider(this).get(CategoryViewModel.class);
+        setListeners();
+
     }
 
+    private void setListeners() {
+        binding.greenRecyclingIV.setOnClickListener(v -> {
+            CategoryFragmentDirections.CategoryToRecord action = CategoryFragmentDirections.categoryToRecord();
+            action.setMaterial(EMaterial.GLASS);
+            navController.navigate(action);
+        });
+        binding.blueRecyclinIV.setOnClickListener(v -> {
+            CategoryFragmentDirections.CategoryToRecord action = CategoryFragmentDirections.categoryToRecord();
+            action.setMaterial(EMaterial.PAPER);
+            navController.navigate(action);
+        });
+        binding.yellowRecyclinIV.setOnClickListener(v -> {
+            CategoryFragmentDirections.CategoryToRecord action = CategoryFragmentDirections.categoryToRecord();
+            action.setMaterial(EMaterial.PLASTIC);
+            navController.navigate(action);
+        });
+    }
 }
