@@ -7,12 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
+import dagger.hilt.android.AndroidEntryPoint;
 import edu.unal.todosalau.ecorecicla.R;
+import edu.unal.todosalau.ecorecicla.databinding.ActivityLoginBinding;
 import edu.unal.todosalau.ecorecicla.ui.viewmodel.LoginViewModel;
 
+@AndroidEntryPoint
 public class LoginActivity extends AppCompatActivity {
     private NavHostFragment navHostFragment;
     private LoginViewModel viewModel;
+
+    private ActivityLoginBinding binding;
 
 
     @Override
@@ -27,4 +32,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("androidx.navigation.safeargs") version Versions.NAVIGATION
+    id("com.google.dagger.hilt.android")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -51,6 +53,15 @@ dependencies {
     implementation(Libraries.PIECHART)
 
     testImplementation(Libraries.JUNIT)
+    androidTestImplementation(Libraries.JUNIT)
 
     implementation(Platforms.KOTLIN)
+
+    implementation(Libraries.HILT)
+    annotationProcessor(Libraries.HILT_ANNOTATOR)
+
+    implementation(Libraries.ROOM)
+    annotationProcessor(Libraries.ROOM_ANNOTATOR)
+
+    implementation(Libraries.BCRYPT)
 }

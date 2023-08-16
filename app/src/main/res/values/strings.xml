@@ -38,4 +38,7 @@
     <string name="title_advice">Consejos</string>
     <string name="advice_now">Aquí va el consejo del día...</string>
 
+    <string name="empty_field">El campo no puede estar vacio</string>
+
+
 </resources>
