@@ -6,7 +6,7 @@
     tools:context=".ui.fragment.StatsFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/welcomeTextView"
+        android:id="@+id/welcomeACTV"
         style="@style/title_style"
         android:gravity="center"
         android:text="@string/title_statistics" />

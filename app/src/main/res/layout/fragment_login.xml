@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_side"
             android:layout_marginEnd="@dimen/margin_side"
-            android:text="@string/title_register" />
+            android:text="@string/register" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
