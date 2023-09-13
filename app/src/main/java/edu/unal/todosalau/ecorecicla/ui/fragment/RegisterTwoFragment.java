@@ -1,4 +1,4 @@
-package edu.unal.todosalau.ecorecicla;
+package edu.unal.todosalau.ecorecicla.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+
+import edu.unal.todosalau.ecorecicla.R;
+import edu.unal.todosalau.ecorecicla.ui.viewmodel.RegisterTwoViewModel;
 
 public class RegisterTwoFragment extends Fragment {
 

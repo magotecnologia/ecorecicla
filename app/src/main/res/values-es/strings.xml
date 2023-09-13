@@ -42,4 +42,6 @@
     <string name="question_one">¿Nombre de tu maestra de primaria?</string>
     <string name="question_two">¿Cual es tu comida favorita?</string>
 
+    <string name="empty_field">El campo no puede estar vacio</string>
+
 </resources>
